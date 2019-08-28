@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cocompostclient/static/css/main.9d6d8dc6.chunk.css",
+    "main.js": "/cocompostclient/static/js/main.849fedbe.chunk.js",
+    "main.js.map": "/cocompostclient/static/js/main.849fedbe.chunk.js.map",
+    "runtime~main.js": "/cocompostclient/static/js/runtime~main.dbc044e0.js",
+    "runtime~main.js.map": "/cocompostclient/static/js/runtime~main.dbc044e0.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/cocompostclient/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.ffe64d67.chunk.js": "/cocompostclient/static/js/2.ffe64d67.chunk.js",
+    "static/js/2.ffe64d67.chunk.js.map": "/cocompostclient/static/js/2.ffe64d67.chunk.js.map",
+    "index.html": "/cocompostclient/index.html",
+    "precache-manifest.2ee5b62dc7c40995b64881162eec5196.js": "/cocompostclient/precache-manifest.2ee5b62dc7c40995b64881162eec5196.js",
+    "service-worker.js": "/cocompostclient/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/cocompostclient/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.9d6d8dc6.chunk.css.map": "/cocompostclient/static/css/main.9d6d8dc6.chunk.css.map",
+    "static/media/App.css": "/cocompostclient/static/media/Amatic-Bold.bc762937.ttf",
+    "static/media/cocoposteTitle1.jpg": "/cocompostclient/static/media/cocoposteTitle1.8f553edb.jpg",
+    "static/media/home_page_2.jpg": "/cocompostclient/static/media/home_page_2.3af8b2ce.jpg",
+    "static/media/pouleAndComposte.jpg": "/cocompostclient/static/media/pouleAndComposte.93975aca.jpg",
+    "static/media/poulesPleinAir.png": "/cocompostclient/static/media/poulesPleinAir.af8c3e76.png",
+    "static/media/poulesVille.jpg": "/cocompostclient/static/media/poulesVille.d06f137b.jpg"
+  }
+}
