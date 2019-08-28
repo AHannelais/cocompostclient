@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Amatic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Amatic-Bold.ttf");
+}
+
+h2,
+h3 {
+  font-family: "Amatic", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  margin: 2vw;
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: calc(45.3px + 1vw);
+  }
+  p {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: calc(45.3px + 1vw);
+  }
+  h4 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 950px) {
+  h2 {
+    font-size: calc(33.3px + 2vw);
+  }
+  p {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 950px) and (min-width: 680px) {
+  h2 {
+    font-size: calc(23.8px + 3vw);
+  }
+  p {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 31px;
+  }
+}
+@media screen and (max-width: 680px) and (min-width: 500px) {
+  h2 {
+    font-size: calc(17px + 4vw);
+  }
+  p {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: calc(22px + 3vw);
+  }
+  p {
+    font-size: 13px;
+  }
+  h4 {
+    font-size: 27px;
+  }
+}
+h4 {
+  font-family: "Amatic", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  margin: 2vw;
+}
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
