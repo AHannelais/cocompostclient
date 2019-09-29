@@ -29,14 +29,17 @@ class textEditor extends React.Component {
             editorState={this.state.editorState}
             onChange={this.onChange}
             actions={customActions}
+            readOnly={this.props.readOnly}
           />
         </div>
+
         <Save
           content={editorStateToJSON(this.state.editorState)}
           TypeOfEdition={this.props.TypeOfEdition}
           title={this.props.title}
           author={this.props.author}
-          id={this.props.id}
+          image={this.props.image}
+          _id={this.props._id}
         />
       </div>
     );

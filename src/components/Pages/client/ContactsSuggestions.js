@@ -23,14 +23,14 @@ class ContactSuggestions extends React.Component {
           <i className="fab fa-facebook-messenger" />
         </Messenger>
         <Gmail
-          href="https://www.facebook.com/WeAreCocomposte/"
+          href="mailto:contact.composte@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fas fa-envelope" />
         </Gmail>
         <Facebook
-          href="https://www.facebook.com/WeAreCocomposte/"
+          href="https://m.me/WeAreCocomposte"
           target="_blank"
           rel="noopener noreferrer"
         >

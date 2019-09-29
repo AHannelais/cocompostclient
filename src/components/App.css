@@ -75,6 +75,7 @@ h4 {
     sans-serif;
   margin: 2vw;
 }
-p {
+p,
+h5 {
   font-family: Helvetica, Arial, sans-serif;
 }
