@@ -7,16 +7,13 @@ import { signIn, signOut } from '../../../actions'
 class GoogleAuth extends React.Component {
   componentDidMount () {
     window.gapi.load('client:auth2', () => {
-      console.log('try load')
       window.gapi.client
         .init({
           clientId:
-            '182862176374-r5fho167s8q44drasc4m5ohe7r6s6o6q.apps.googleusercontent.com',
-          scope: 'email',
-          prompt: 'login'
+            '631609271480-5ftiq1echt7d2ab5c0k69im2ra02l7ug.apps.googleusercontent.com',
+          scope: 'email'
         })
         .then(() => {
-          console.log('try get')
           this.auth = window.gapi.auth2.getAuthInstance()
           this.onAuthchange(this.auth.isSignedIn.get())
           this.auth.isSignedIn.listen(this.onAuthchange)

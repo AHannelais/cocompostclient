@@ -21,6 +21,7 @@ class AdminPage extends React.Component {
       <div className='container'>
         <h2>Administration Cocomposte</h2>
         <div className='row'>
+          <GoogleAuth />
           <button
             className='btn btn-primary m-1'
             disabled={this.state.display === 'articles'}

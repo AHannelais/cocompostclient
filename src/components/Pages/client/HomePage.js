@@ -56,6 +56,7 @@ class HomePage extends React.PureComponent {
                 habitants)
               </p>
             </Text>
+
             <ShowArticles />
           </div>
           <div className='container '>

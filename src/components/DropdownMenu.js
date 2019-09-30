@@ -35,7 +35,6 @@ class DropdownMenu extends Component {
     this.onLeaveHideMenu()
   }
   onClickMenu = () => {
-    console.log('start', this.state.showMenu)
     if (this.state.showMenu) {
       this.onLeaveHideMenu()
     } else if (!this.state.showMenu) {

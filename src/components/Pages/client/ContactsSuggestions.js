@@ -1,46 +1,36 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 class ContactSuggestions extends React.Component {
-  state = { gmail: false };
-  onclickGmail = () => {
-    this.setState({ gmail: true });
-    navigator.clipboard.writeText("mabit");
-    console.log("copied");
-  };
-  onClickOutGmail = () => {
-    this.setState({ gmail: false });
-  };
-
-  render() {
+  render () {
     return (
       <ContactWrapper onclick>
         <Messenger
-          href="https://www.facebook.com/WeAreCocomposte/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://m.me/WeAreCocomposte'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          <i className="fab fa-facebook-messenger" />
+          <i className='fab fa-facebook-messenger' />
         </Messenger>
         <Gmail
-          href="mailto:contact.composte@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='mailto:contact.composte@gmail.com'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          <i className="fas fa-envelope" />
+          <i className='fas fa-envelope' />
         </Gmail>
         <Facebook
-          href="https://m.me/WeAreCocomposte"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://www.facebook.com/WeAreCocomposte/'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          <i className="fab fa-facebook-f" />
+          <i className='fab fa-facebook-f' />
         </Facebook>
       </ContactWrapper>
-    );
+    )
   }
 }
-export default ContactSuggestions;
+export default ContactSuggestions
 
 // Style
 
@@ -82,7 +72,7 @@ const ContactWrapper = styled.div`
       border-color: #ffffff !important;
     }
   }
-`;
-const Facebook = styled.a``;
-const Gmail = styled.a``;
-const Messenger = styled.a``;
+`
+const Facebook = styled.a``
+const Gmail = styled.a``
+const Messenger = styled.a``
