@@ -1,21 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import styled from "styled-components";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import styled from 'styled-components'
 const ImageModal = props => {
   return ReactDOM.createPortal(
     <Ext onClick={props.onDismiss}>
       <Wrapper>
         <h5>
-          <i className="far fa-times-circle" />
+          <i className='far fa-times-circle' style={{ cursor: 'pointer' }} />
         </h5>
-        <img src={props.image.link} alt="NOT FOUND" />
+        <img src={props.image.link} alt='NOT FOUND' />
         <h5>{props.image.caption}</h5>
       </Wrapper>
     </Ext>,
-    document.querySelector("#modal")
-  );
-};
-export default ImageModal;
+    document.querySelector('#modal')
+  )
+}
+export default ImageModal
 const Ext = styled.div`
   position: fixed;
   z-index: 1100;
@@ -24,7 +24,7 @@ const Ext = styled.div`
   top: 0;
   left: 0;
   background: rgba(1, 1, 1, 0.7);
-`;
+`
 const Wrapper = styled.div`
   position: fixed;
   z-index: 2;
@@ -44,4 +44,4 @@ const Wrapper = styled.div`
       font-size: 30px;
     }
   }
-`;
+`

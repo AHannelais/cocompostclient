@@ -1,10 +1,9 @@
 import React from 'react'
 
 import marie from '../../../images/marie.png'
-import jade from '../../../images/jade.png'
 import justine from '../../../images/justine.png'
 import marlene from '../../../images/marlene.png'
-import pascal from '../../../images/pascal.png'
+import test from '../../../images/faviconOriginal.png'
 import { Title, TextAndImage, Text } from './styledComponents'
 
 const CocomposteCestQuoi = () => {
@@ -41,21 +40,9 @@ const CocomposteCestQuoi = () => {
 
           <img src={marie} alt='Marie' />
         </TextAndImage>
-        <TextAndImage>
-          <img src={jade} alt='Jade' />
-          <div>
-            <h4>Jade</h4>
-            <p>
-              Jeune montpelliéraine à la main verte, aimerait s’assurer que nos
-              espaces urbains demeurent vivables et continuent de nous rendre
-              plus heureux, plus ingénieux et en meilleure santé. Non pas
-              uniquement parce que notre environnement nous influence tout
-              autant que nous l’influençons, mais parce que chaque personne a le
-              droit à une société durable.
-            </p>
-          </div>
-        </TextAndImage>
-        <TextAndImage>
+
+        <TextAndImage col='col'>
+          <img src={justine} alt='Justine' />
           <div>
             <h4>Justine</h4>
             <p>
@@ -66,11 +53,8 @@ const CocomposteCestQuoi = () => {
               font partie de mes convictions.
             </p>
           </div>
-
-          <img src={justine} alt='Justine' />
         </TextAndImage>
         <TextAndImage>
-          <img src={marlene} alt='Marlène' />
           <div>
             <h4>Marlène</h4>
             <p>
@@ -80,18 +64,42 @@ const CocomposteCestQuoi = () => {
               pleinement la nature dans notre belle ville rose.
             </p>
           </div>
+          <img src={marlene} alt='Marlène' />
+        </TextAndImage>
+        <Title>Leur Coup de Pouce</Title>
+        <TextAndImage>
+          <div>
+            <h4>Laura</h4>
+            <p>Communication et Evénementiel</p>
+            <img src={test} alt='Laura' />
+          </div>
+          <div>
+            <h4>Antoine</h4>
+            <p>Conception du site Internet</p>
+            <img src={test} alt='Antoine' />
+          </div>
+          <div>
+            <h4>Nicolas</h4>
+            <p>Conception des poulaillers et Réflexions techniques</p>
+            <img src={test} alt='Nicolas' />
+          </div>
         </TextAndImage>
         <TextAndImage>
           <div>
-            <h4>Pascal</h4>
-            <p>
-              Enfant de la ruralité, j’aime à repenser la ville à travers
-              l’innovation sociale. La collaboration, l’échange et
-              l’intelligence collective sont mes moteurs.
-            </p>
+            <h4>Mathilde</h4>
+            <p>Aide juridique</p>
+            <img src={test} alt='Mathilde' />
           </div>
-
-          <img src={pascal} alt='Pascal' />
+          <div>
+            <h4>Michael</h4>
+            <p>Création du Logo</p>
+            <img src={test} alt='Michael' />
+          </div>
+          <div>
+            <h4>Alexandre</h4>
+            <p>Création du Logo</p>
+            <img src={test} alt='Alexandre' />
+          </div>
         </TextAndImage>
       </div>
     </>

@@ -91,7 +91,7 @@ const SloganContainer = styled.div`
 const SloganTitle = styled.h1`
   font-family: 'Amatic', Impact, Haettenschweiler, 'Arial Narrow Bold',
     sans-serif;
-  font-size: 15vmax;
+  font-size: 13vmax;
   line-height: 0.9;
   text-align: left;
   margin-bottom: 10px;

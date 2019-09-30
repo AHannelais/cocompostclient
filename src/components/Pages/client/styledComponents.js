@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Title = styled.h2`
   text-align: center;
   margin-top: 5vw;
   margin-bottom: 5vw;
-`;
+`
 export const TitleH4 = styled.h4`
   text-align: center;
   margin-top: 5vw;
   margin-bottom: 5vw;
-`;
+`
 export const TextAndImage = styled.div`
   display: flex;
   align-items: stretch;
@@ -19,7 +19,7 @@ export const TextAndImage = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 950px) {
-    flex-direction: column-reverse;
+    flex-direction: ${props => (props.col ? 'column' : 'column-reverse')};
   }
   div {
     margin-left: 3%;
@@ -61,7 +61,7 @@ export const TextAndImage = styled.div`
     max-width: 50%;
     max-height: 50vh;
     object-fit: contain;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     align-self: stretch;
     padding-left: 15px;
     padding-right: 15px;
@@ -72,7 +72,7 @@ export const TextAndImage = styled.div`
       margin-right: auto;
     }
   }
-`;
+`
 
 export const Text = styled.div`
   margin-left: auto;
@@ -96,7 +96,7 @@ export const Text = styled.div`
 
     margin-bottom: 30px;
   }
-`;
+`
 
 export const ImageWrapper = styled.div`
   cursor: pointer;
@@ -122,7 +122,7 @@ export const ImageWrapper = styled.div`
     border-radius: 5px;
     transform: translate(-50%, -50%);
   }
-`;
+`
 export const CarouselWrapper = styled.div`
   height: 400px;
   position: relative;
@@ -155,7 +155,7 @@ export const CarouselWrapper = styled.div`
     padding-right: 0;
     flex: none;
   }
-`;
+`
 export const ArticleWrapper = styled.div`
   cursor: pointer;
   height: 350px;
@@ -188,7 +188,7 @@ export const ArticleWrapper = styled.div`
     width: 100%;
     height: 30%;
   }
-`;
+`
 export const ContentWrapper = styled.div`
   align-items: flex-start;
-`;
+`

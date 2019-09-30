@@ -30,7 +30,7 @@ const CocomposteCestQuoi = () => {
             </p>
           </div>
         </Text>
-        <TextAndImage>
+        <TextAndImage col='col'>
           <img src={laCloche} alt='La Cloche' />
           <div>
             <h4>L’Association la Cloche </h4>
@@ -70,7 +70,7 @@ const CocomposteCestQuoi = () => {
           <img src={faculteadmin2} alt="faculté d'administration de toulouse" />
         </TextAndImage>
         <Title>Nos partenaires techniques </Title>
-        <TextAndImage>
+        <TextAndImage col='col'>
           <img src={mairietoulouse} alt='Mairie de Toulouse' />
           <div>
             <h4>Mairie de Toulouse </h4>
@@ -93,7 +93,7 @@ const CocomposteCestQuoi = () => {
           </div>
           <img src={humusetassocies} alt='Humus et Assouciés' />
         </TextAndImage>
-        <TextAndImage>
+        <TextAndImage col='col'>
           <img src={mariesouvestre} alt='Marie Souvestre' />
           <div>
             <h4>Marie Souvestre  </h4>
