@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import DropdownMenu from '../../DropdownMenu'
-import cocomposteTitle from '../../../images/cocoposteTitle3.png'
+import cocomposteTitle from '../../../images/cocoposteTitle2.png'
 import styled from 'styled-components'
 import ContactSuggestions from './ContactsSuggestions'
 const Navbar = () => {
