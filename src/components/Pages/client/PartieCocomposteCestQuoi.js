@@ -1,6 +1,6 @@
 import React from 'react'
 import poulesVille from '../../../images/poulesVille.jpg'
-import poulesPleinAir from '../../../images/poulesPleinAir.png'
+import poulesPleinAir from '../../../images/poulesPleinAir.jpg'
 import pouleAndComposte from '../../../images/pouleAndComposte.jpg'
 import { Title, TextAndImage, Text } from './styledComponents'
 

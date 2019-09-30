@@ -1,8 +1,8 @@
 import React from 'react'
 
 import marie from '../../../images/marie.png'
-import justine from '../../../images/justine.png'
-import marlene from '../../../images/marlene.png'
+import justine from '../../../images/justine.jpg'
+import marlene from '../../../images/marlene.jpg'
 import test from '../../../images/faviconOriginal.png'
 import { Title, TextAndImage, Text } from './styledComponents'
 
@@ -66,7 +66,7 @@ const CocomposteCestQuoi = () => {
           </div>
           <img src={marlene} alt='Marlène' />
         </TextAndImage>
-        <Title>Leur Coup de Pouce</Title>
+        <Title>Leur Coups de Pouce</Title>
         <TextAndImage>
           <div>
             <h4>Laura</h4>
