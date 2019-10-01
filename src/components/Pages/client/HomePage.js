@@ -26,9 +26,14 @@ class HomePage extends React.PureComponent {
     this.updateHeight()
   }
   componentDidMount = () => {
+    window.scrollTo(0, 0)
     window.addEventListener('resize', this.updateHeight)
   }
   componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateHeight)
+  }
+  componentDidUpdate () {
+    window.scrollTo(0, 0)
     window.removeEventListener('resize', this.updateHeight)
   }
   render () {
@@ -38,7 +43,7 @@ class HomePage extends React.PureComponent {
 
         <Navbar />
         <ContentWrapper>
-          <div className='container '>
+          <div className='container'>
             <Title>Bienvenue</Title>
             <Text>
               <p>

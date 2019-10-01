@@ -37,8 +37,8 @@ class ShowArticles extends React.Component {
   }
 
   render () {
-  
     if (this.state.fetched && this.props.articles !== []) {
+      console.log('renderarticles')
       return (
         <TextAndImage>
           <CarouselWrapper>

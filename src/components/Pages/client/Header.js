@@ -26,11 +26,9 @@ class Header extends React.Component {
     })
     TweenMax.from(this.slogan, 1, { opacity: 0 })
   }
-  onPointerOVer = () => {}
   onEnterPointer = () => {
     TweenMax.to(this.pointer, 0.2, { scale: 1.2 })
   }
-
   onLeavePointer = () => {
     TweenMax.to(this.pointer, 0.2, { scale: 1 })
   }
@@ -119,6 +117,10 @@ const ScrollDownLink = styled.div`
   text-shadow: 1px 1px 3px white;
   transform: translateX(-50%);
   white-space: nowrap;
+  @media screen and (min-width: 2000px) {
+    font-size: 1.5vw;
+  }
+
   @media screen and (max-width: 950px) {
     bottom: -20px;
   }
@@ -126,6 +128,9 @@ const ScrollDownLink = styled.div`
 
 const EggImage = styled.img`
   width: 30px;
+  @media screen and (min-width: 2000px) {
+    width: 1.5vw;
+  }
 `
 const LinkArrowImage = styled.img`
   position: relative;
@@ -133,4 +138,8 @@ const LinkArrowImage = styled.img`
   left: 30%;
   height: 20px;
   width: 50px;
+  @media screen and (min-width: 2000px) {
+    width: 2.5vw;
+    height: 1vw;
+  }
 `

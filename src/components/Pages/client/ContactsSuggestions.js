@@ -60,9 +60,14 @@ const ContactWrapper = styled.div`
     transition: all 0.25s;
     font-size: 25px;
     @media screen and (min-width: 950px) {
-      width: 70px;
-      height: 70px;
+      width: calc(2vw + 40px);
+      height: calc(2vw + 40px);
+      font-size: calc(1vw + 15px);
     }
+    @media screen and (min-width: 1950px) {
+      border: 4px solid #99c413 !important;
+    }
+
     i {
       margin: auto;
     }

@@ -27,7 +27,7 @@ const Nav = styled.nav`
   position: sticky;
   top: 0;
   font-family: Amatic, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  height: 100px;
+  height: calc(3vw + 71.5px);
   @media screen and (max-width: 950px) and (min-width: 680px) {
     height: calc(9.26vw + 12px);
   }
@@ -39,18 +39,24 @@ const Nav = styled.nav`
 `
 const Title = styled.div`
   max-width: 0%;
-  background-color: cyan;
+
   img {
     max-height: 95%;
     margin-top: auto;
     margin-bottom: auto;
+    transition: all 0.2s;
     cursor: pointer;
+    :hover {
+      max-height: 105%;
+      transform: translate(-5%, -5%);
+    }
   }
 `
 const Wrapper = styled.div`
   position: absolute;
   right: 10px;
-  top: calc(50% - 40px);
+  top: 50%;
+  transform: translate(0, -50%);
   @media screen and (max-width: 950px) {
     display: none;
   }

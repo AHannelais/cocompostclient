@@ -79,3 +79,15 @@ p,
 h5 {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+@media screen and (min-width: 2000px) {
+  h4 {
+    font-size: calc(2vw - 6px);
+  }
+  p {
+    font-size: calc(1vw - 3px);
+  }
+  .container {
+    max-width: 66.6%;
+  }
+}

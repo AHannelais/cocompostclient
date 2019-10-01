@@ -44,7 +44,6 @@ export const TextAndImage = styled.div`
       padding: 0;
       border: 0;
       font-weight: 500;
-
       line-height: 1.375;
       margin: 0 0 20px;
     }
@@ -54,6 +53,9 @@ export const TextAndImage = styled.div`
       line-height: 28px;
       margin-top: 0;
       margin-bottom: 30px;
+      @media screen and (min-width: 2000px) {
+        line-height: calc(1.5vw - 2px);
+      }
     }
   }
   img {
@@ -93,8 +95,10 @@ export const Text = styled.div`
     color: rgba(0, 0, 0, 0.5);
     letter-spacing: 0.2px;
     line-height: 28px;
-
     margin-bottom: 30px;
+    @media screen and (min-width: 2000px) {
+      line-height: calc(1.5vw - 2px);
+    }
   }
 `
 
@@ -103,6 +107,9 @@ export const ImageWrapper = styled.div`
   margin: 5px 5px 5px 5px;
   height: 300px;
   position: relative;
+  @media screen and (min-width: 2000px) {
+    height: calc(15vw);
+  }
   @media screen and (max-width: 768px) {
     height: 200px;
   }
@@ -126,18 +133,13 @@ export const ImageWrapper = styled.div`
 export const CarouselWrapper = styled.div`
   height: 400px;
   position: relative;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
   align-self: center;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  flex: none;
   background-color: rgb(250, 250, 250);
   border: 2px solid rgba(200, 200, 20, 0.5);
   border-radius: 5px;
+  @media screen and (min-width: 2000px) {
+    height: 20vw;
+  }
   @media screen and (max-width: 768px) {
     height: 300px;
   }
@@ -162,6 +164,9 @@ export const ArticleWrapper = styled.div`
   width: 100%;
   position: relative;
   top: 0;
+  @media screen and (min-width: 2000px) {
+    height: 17.5vw;
+  }
   @media screen and (max-width: 768px) {
     height: 200px;
   }
