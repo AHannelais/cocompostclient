@@ -36,7 +36,8 @@ export default ContactSuggestions
 
 const ContactWrapper = styled.div`
   position: sticky;
-  bottom: 10px;
+  z-index: 1001;
+  bottom: 20px;
   right: 20px;
   display: flex;
   flex-direction: row-reverse;

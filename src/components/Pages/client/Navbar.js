@@ -9,7 +9,12 @@ const Navbar = () => {
     <Nav>
       <DropdownMenu />
       <Title>
-        <Link to='/'>
+        <Link
+          to='/'
+          onClick={() => {
+            window.scrollTo(0, 0)
+          }}
+        >
           <img src={cocomposteTitle} alt='COCOMPOSTE' />
         </Link>
       </Title>
@@ -44,6 +49,7 @@ const Title = styled.div`
     max-height: 95%;
     margin-top: auto;
     margin-bottom: auto;
+    width: auto;
     transition: all 0.2s;
     cursor: pointer;
     :hover {

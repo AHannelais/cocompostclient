@@ -13,9 +13,10 @@ const CocomposteCestQuoi = () => {
           <div>
             <h4>Objectif</h4>
             <p>
-              Cocomposte est une association qui se donne pour mission, à
-              travers l'installation de poulaillers dans les jardins publics des
-              grandes villes
+              Cocomposte est une association qui se donne pour mission de
+              réduire les déchets et promouvoir le lien social , à travers
+              l'installation de poulaillers dans les jardins publics des grandes
+              villes
             </p>
           </div>
 
@@ -51,7 +52,7 @@ const CocomposteCestQuoi = () => {
             <h4>Rencontres</h4>
             <p>
               Promouvoir le lien social en faisant des poulaillers un lieu de
-              rencontre et d'échange. Notre projet a également pour volonté
+              rencontre et d'échanges. Notre projet a également pour volonté
               d'impliquer des associations d'insertion professionnelle et
               sociale, de sa conception à sa gestion en passant par son
               installation.
@@ -59,9 +60,9 @@ const CocomposteCestQuoi = () => {
             <h4>Pédagogie</h4>
             <p>
               Intégrer davantage de nature en ville et informer les populations
-              aux enjeux du développement durable, de la transitions énergétique
-              et de la préservation des ressources à travers un parcours
-              pédagogique adossé aux poulaillers.
+              aux enjeux du développement durable, de la transition énergétique
+              et de la préservation des ressources à travers un parcours  un
+              parcours pédagogique aux abords des poulaillers .
             </p>
           </div>
 

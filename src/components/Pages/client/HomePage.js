@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import { ContentWrapper, Title, Text } from './styledComponents'
 import Header from './Header'
 import ContactSuggestion from './ContactsSuggestions'
+import Footer from './Footer'
 import ShowImages from './ShowImages'
 import ShowArticles from './ShowArticles'
 class HomePage extends React.PureComponent {
@@ -29,36 +30,35 @@ class HomePage extends React.PureComponent {
     window.scrollTo(0, 0)
     window.addEventListener('resize', this.updateHeight)
   }
+
   componentWillUnmount = () => {
     window.removeEventListener('resize', this.updateHeight)
   }
-  componentDidUpdate () {
-    window.scrollTo(0, 0)
-    window.removeEventListener('resize', this.updateHeight)
-  }
+
   render () {
     return (
       <>
         <Header />
-
         <Navbar />
         <ContentWrapper>
           <div className='container'>
             <Title>Bienvenue</Title>
             <Text>
               <p>
-                Bonjour à tous, Nous avons l'immense honneur de vous présenter
-                notre projet Cocomposte, des poules et du compost dans vos
-                quartiers !! Cocomposte est un projet pour les habitants des
-                centres ville qui n'ont pas la place d'accueillir des poules
-                pour avoir des oeufs ou de faire un compost.
+                Bonjour à toutes et à tous
+                <br /> Nous avons l'immense honneur de vous présenter notre
+                projet Cocomposte, des poules et du compost dans vos quartiers
+                !! Cocomposte est un projet pour les habitants des centres ville
+                qui n'ont pas la place d'accueillir des poules pour avoir des
+                oeufs ou de faire un compost.
               </p>
               <p>
-                L'idée de participer au DEVELOPPEMENT DURABLE par la réduction
-                des déchets et la promotion des activités locales en installant
-                des poulaillers urbains à l'échelle des quartiers pour rétribuer
-                le geste citoyen en œufs frais issus de nos poules (pour les
-                habitants)
+                Notre idée est de participer au développement durable par la
+                réduction des déchets et la promotion des activités locales.
+                Pour ce faire, nous aimerions installer des poulaillers urbains
+                dans les différents jardins publics de Toulouse afin de pouvoir
+                proposer des œufs frais aux habitants, en échange de leurs
+                bio-déchets
               </p>
             </Text>
 
@@ -69,6 +69,7 @@ class HomePage extends React.PureComponent {
             <ShowImages />
           </div>
           {this.renderContactSuggestion()}
+          <Footer />
         </ContentWrapper>
       </>
     )

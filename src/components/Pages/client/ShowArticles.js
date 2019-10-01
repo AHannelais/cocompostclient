@@ -38,7 +38,6 @@ class ShowArticles extends React.Component {
 
   render () {
     if (this.state.fetched && this.props.articles !== []) {
-      console.log('renderarticles')
       return (
         <TextAndImage>
           <CarouselWrapper>
@@ -46,7 +45,7 @@ class ShowArticles extends React.Component {
               responsive={responsive}
               infinite
               autoPlay
-              autoPlaySpeed={5000}
+              autoPlaySpeed={4000}
             >
               {this.props.articles.map(article => {
                 return (
@@ -71,7 +70,7 @@ class ShowArticles extends React.Component {
             <h4>Articles</h4>
             <p>
               La recette du mois ? L'avancée du projet ? Des news en tout genre
-              ? jettez un coup d'oeil aux articles conconctés par la fine équipe
+              ? jetez un coup d'oeil aux articles conconctés par la fine équipe
               de Cocomposte
             </p>
           </div>

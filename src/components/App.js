@@ -8,10 +8,24 @@ import CreateArticle from './Pages/admin/CreateArticle'
 import EditArticle from './Pages/admin/EditArticle'
 import ClientPage from './Pages/client/ClientPages'
 import ShowArticle from './Pages/client/ShowArticle'
+import Cookies from './Pages/Cookies'
 class App extends React.Component {
+  state = { cookies: true }
+  renderCookies = () => {
+    if (this.state.cookies) {
+      return (
+        <Cookies
+          callback={() => {
+            this.setState({ cookies: false })
+          }}
+        />
+      )
+    }
+  }
   render () {
     return (
       <div>
+        {this.renderCookies()}
         <Router history={history}>
           <div>
             <Switch>

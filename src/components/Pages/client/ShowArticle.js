@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactSuggestion from './ContactsSuggestions'
+import Footer from './Footer'
 import Navbar from './Navbar'
 import { connect } from 'react-redux'
 import { fetchArticle } from '../../../actions'
@@ -59,8 +60,8 @@ class ShowArticle extends React.Component {
       <>
         <Navbar />
         {this.renderPage()}
-
         {this.renderContactSuggestion()}
+        <Footer />
       </>
     )
   }

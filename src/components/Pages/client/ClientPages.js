@@ -1,9 +1,11 @@
 import React from 'react'
 import ContactSuggestion from './ContactsSuggestions'
+import Footer from './Footer'
 import Navbar from './Navbar'
 import PartieCocomposteCestQuoi from './PartieCocomposteCestQuoi'
 import PartieNosPartenaires from './PartieNosPartenaires'
 import PartieQuiSommesNous from './PartieQuiSommesNous'
+import MentionLegales from './MentionsLégales'
 export default class ClientPage extends React.Component {
   state = { width: null }
 
@@ -21,6 +23,16 @@ export default class ClientPage extends React.Component {
       return <ContactSuggestion />
     }
   }
+  componentWillMount = () => {
+    this.updateHeight()
+  }
+  componentDidMount = () => {
+    window.scrollTo(0, 0)
+    window.addEventListener('resize', this.updateHeight)
+  }
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateHeight)
+  }
   renderPage = () => {
     switch (this.props.match.params.page) {
       case 'CocomposteCestQuoi':
@@ -29,21 +41,11 @@ export default class ClientPage extends React.Component {
         return <PartieNosPartenaires />
       case 'QuiSommesNous':
         return <PartieQuiSommesNous />
+      case 'MentionsLegales':
+        return <MentionLegales />
       default:
         return <div>404 NOT FOUND</div>
     }
-  }
-
-  componentDidMount () {
-    window.scrollTo(0, 0)
-    window.addEventListener('resize', this.updateHeight)
-  }
-  componentDidUpdate () {
-    window.scrollTo(0, 0)
-    window.removeEventListener('resize', this.updateHeight)
-  }
-  componentWillMount = () => {
-    this.updateHeight()
   }
 
   render () {
@@ -51,8 +53,8 @@ export default class ClientPage extends React.Component {
       <>
         <Navbar />
         {this.renderPage()}
-
         {this.renderContactSuggestion()}
+        <Footer />
       </>
     )
   }

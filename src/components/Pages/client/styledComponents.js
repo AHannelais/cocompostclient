@@ -107,6 +107,10 @@ export const ImageWrapper = styled.div`
   margin: 5px 5px 5px 5px;
   height: 300px;
   position: relative;
+  transition: all 0.2s;
+  :hover {
+    transform: scale(1.05);
+  }
   @media screen and (min-width: 2000px) {
     height: calc(15vw);
   }
@@ -134,6 +138,7 @@ export const CarouselWrapper = styled.div`
   height: 400px;
   position: relative;
   align-self: center;
+  width: 800px;
   background-color: rgb(250, 250, 250);
   border: 2px solid rgba(200, 200, 20, 0.5);
   border-radius: 5px;
@@ -161,9 +166,10 @@ export const CarouselWrapper = styled.div`
 export const ArticleWrapper = styled.div`
   cursor: pointer;
   height: 350px;
-  width: 100%;
-  position: relative;
-  top: 0;
+  transition: all 0.2s;
+  :hover {
+    transform: scale(1.1);
+  }
   @media screen and (min-width: 2000px) {
     height: 17.5vw;
   }
@@ -176,19 +182,15 @@ export const ArticleWrapper = styled.div`
   img {
     position: absolute;
     left: 50%;
-    top: 0;
-    max-width: 100%;
+    max-width: 70%;
     max-height: 70%;
-    min-width: 100%;
-    min-height: 70%;
-    height: 100%;
+    padding: 0;
     width: auto;
     transform: translate(-50%, 0);
   }
   div {
     position: absolute;
     text-align: center;
-
     bottom: 0;
     width: 100%;
     height: 30%;

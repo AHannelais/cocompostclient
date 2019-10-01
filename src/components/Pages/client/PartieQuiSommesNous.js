@@ -19,8 +19,8 @@ const CocomposteCestQuoi = () => {
             en compte au sein de l’agenda politique, ainsi qu’aux solutions
             envisageables pour aller plus loin dans les divers aspects que
             regroupe cette notion. En ce sens, la formation du Master que nous
-            avons intégré nous a permis d’acquérir les compétences nécessaires à
-            la construction d’une réflexion globale sur le changement de nos
+            avons intégrée nous a permis d’acquérir les compétences nécessaires
+            à la construction d’une réflexion globale sur le changement de nos
             modèles de développement, plus soucieux de notre environnement et
             plus raisonnable dans l’utilisation des ressources naturelles.
             Sachant que la mise en œuvre de politiques territoriales de
