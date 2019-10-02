@@ -8,6 +8,7 @@ import CreateArticle from './Pages/admin/CreateArticle'
 import EditArticle from './Pages/admin/EditArticle'
 import ClientPage from './Pages/client/ClientPages'
 import ShowArticle from './Pages/client/ShowArticle'
+import InfosUtiles from './Pages/admin/InfosUtiles'
 import Cookies from './Pages/Cookies'
 class App extends React.Component {
   state = { cookies: true }
@@ -43,6 +44,7 @@ class App extends React.Component {
                 exact
                 component={EditArticle}
               />
+              <Route path='/admin/infosUtiles' exact component={InfosUtiles} />
               <Route path='/articles/:_id' exact component={ShowArticle} />
             </Switch>
           </div>

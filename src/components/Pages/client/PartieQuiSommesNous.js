@@ -3,7 +3,6 @@ import React from 'react'
 import marie from '../../../images/marie.png'
 import justine from '../../../images/justine.jpg'
 import marlene from '../../../images/marlene.jpg'
-import test from '../../../images/faviconOriginal.png'
 import { Title, TextAndImage, Text } from './styledComponents'
 
 const CocomposteCestQuoi = () => {
@@ -71,34 +70,28 @@ const CocomposteCestQuoi = () => {
           <div>
             <h4>Laura</h4>
             <p>Communication et Evénementiel</p>
-            <img src={test} alt='Laura' />
           </div>
           <div>
             <h4>Antoine</h4>
             <p>Conception du site Internet</p>
-            <img src={test} alt='Antoine' />
           </div>
           <div>
             <h4>Nicolas</h4>
             <p>Conception des poulaillers et Réflexions techniques</p>
-            <img src={test} alt='Nicolas' />
           </div>
         </TextAndImage>
         <TextAndImage>
           <div>
             <h4>Mathilde</h4>
             <p>Aide juridique</p>
-            <img src={test} alt='Mathilde' />
           </div>
           <div>
             <h4>Michael</h4>
             <p>Création du Logo</p>
-            <img src={test} alt='Michael' />
           </div>
           <div>
             <h4>Alexandre</h4>
             <p>Création du Logo</p>
-            <img src={test} alt='Alexandre' />
           </div>
         </TextAndImage>
       </div>

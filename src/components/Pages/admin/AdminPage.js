@@ -36,6 +36,15 @@ class AdminPage extends React.Component {
           >
             images
           </button>
+          <button
+            className='btn btn-secondary m-1'
+            style={{ position: 'absolute', right: '20%' }}
+            onClick={() => {
+              window.open('/admin/infosUtiles')
+            }}
+          >
+            <i className='fas fa-info-circle' /> infos utiles
+          </button>
         </div>
 
         {this.renderSelected()}

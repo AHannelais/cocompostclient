@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { ContentWrapper, Title, Text } from './styledComponents'
+import { ContentWrapper, Title, Text, TextAndImage } from './styledComponents'
 import Header from './Header'
 import ContactSuggestion from './ContactsSuggestions'
 import Footer from './Footer'
 import ShowImages from './ShowImages'
 import ShowArticles from './ShowArticles'
+import Schema from '../../../images/schema1.jpg'
 class HomePage extends React.PureComponent {
   state = { width: null }
 
@@ -52,6 +53,10 @@ class HomePage extends React.PureComponent {
                 qui n'ont pas la place d'accueillir des poules pour avoir des
                 oeufs ou de faire un compost.
               </p>
+              <Title>
+                <img src={Schema} alt='Schema Cocomposte' />
+              </Title>
+
               <p>
                 Notre idée est de participer au développement durable par la
                 réduction des déchets et la promotion des activités locales.
@@ -61,7 +66,7 @@ class HomePage extends React.PureComponent {
                 bio-déchets
               </p>
             </Text>
-
+            <TextAndImage />
             <ShowArticles />
           </div>
           <div className='container '>

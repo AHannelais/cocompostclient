@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import DropdownMenu from '../../DropdownMenu'
+import DropdownMenu from './DropdownMenu'
 import cocomposteTitle from '../../../images/cocoposteTitle2.png'
 import styled from 'styled-components'
 import ContactSuggestions from './ContactsSuggestions'
@@ -43,13 +43,15 @@ const Nav = styled.nav`
   display: flex;
 `
 const Title = styled.div`
-  max-width: 0%;
-
+  width: calc(15vw + 358px);
+  @media screen and (max-width: 950px) and (min-width: 680px) {
+    width: calc(46.3vw + 60px);
+  }
+  @media screen and (max-width: 680px) {
+    width: 66vw;
+  }
   img {
     max-height: 95%;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: auto;
     transition: all 0.2s;
     cursor: pointer;
     :hover {

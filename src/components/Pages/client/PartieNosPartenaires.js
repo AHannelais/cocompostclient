@@ -38,11 +38,14 @@ const CocomposteCestQuoi = () => {
               La Cloche est une association qui développe des programmes visant
               à changer le regard porté sur le monde de la rue et réhabiliter
               l’image des plus démunis, en encourageant le faire ensemble entre
-              voisins avec ou sans domicile. Des personnes sans domicile ont
-              ainsi accepté de nous apporter leur aide lors de la construction
-              et l’installation du futur poulailler mais également d’intervenir
-              lors de l’organisation d’évènements. Un grand merci pour leur aide
-              si précieuse, leur volonté et leur bonne humeur !
+              voisins avec ou sans domicile.
+              <p>
+                Des personnes sans domicile ont ainsi accepté de nous apporter
+                leur aide lors de la construction et l’installation du futur
+                poulailler mais également d’intervenir lors de l’organisation
+                d’évènements. Un grand merci pour leur aide si précieuse, leur
+                volonté et leur bonne humeur !
+              </p>
             </p>
           </div>
         </TextAndImage>

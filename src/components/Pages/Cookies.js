@@ -10,7 +10,9 @@ class Cookies extends React.Component {
             Ce site utilise des cookies pour vous garantir la meilleure
             expérience
           </p>
-          <a href='http://www.youronlinechoices.com/fr/'>En savoir plus</a>
+          <a href='http://www.youronlinechoices.com/fr/'>
+            <i className='fas fa-info-circle' /> En savoir plus
+          </a>
           <button
             className='btn btn-secondary m-1'
             onClick={this.props.callback}
@@ -32,8 +34,9 @@ const CookieWrapper = styled.div`
   bottom: 25px;
   width: 400px;
   max-width: 90%;
+  border: 2px solid #99c413;
   border-radius: 10px;
-  background-color: #99c413;
+  background-color: rgb(250, 250, 250);
   padding: 5px;
   div {
     a {
