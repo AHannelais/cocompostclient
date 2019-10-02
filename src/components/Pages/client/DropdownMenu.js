@@ -110,6 +110,7 @@ export default DropdownMenu
 const MenuButton = styled.div`
   margin-right: 2vw;
   margin-left: 2vw;
+  height: 100%;
   font-size: calc(20px + 2.5vw);
   cursor: pointer;
   @media screen and (max-width: 350px) {
