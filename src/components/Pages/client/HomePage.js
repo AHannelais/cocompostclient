@@ -1,48 +1,48 @@
-import React from 'react'
-import Navbar from './Navbar'
-import { ContentWrapper, Title, Text, TextAndImage } from './styledComponents'
-import Header from './Header'
-import ContactSuggestion from './ContactsSuggestions'
-import Footer from './Footer'
-import ShowImages from './ShowImages'
-import ShowArticles from './ShowArticles'
-import Schema from '../../../images/schema1.jpg'
+import React from "react";
+import Navbar from "./Navbar";
+import { ContentWrapper, Title, Text, TextAndImage } from "./styledComponents";
+import Header from "./Header";
+import ContactSuggestion from "./ContactsSuggestions";
+import Footer from "./Footer";
+import ShowImages from "./ShowImages";
+import ShowArticles from "./ShowArticles";
+import Schema from "../../../images/schema1.jpg";
 class HomePage extends React.PureComponent {
-  state = { width: null }
+  state = { width: null };
 
   updateHeight = () => {
-    const w = window
-    const d = document
-    const documentElement = d.documentElement
-    const body = d.getElementsByTagName('body')[0]
+    const w = window;
+    const d = document;
+    const documentElement = d.documentElement;
+    const body = d.getElementsByTagName("body")[0];
     const width =
-      w.innerWidth || documentElement.clientWidth || body.clientWidth
-    this.setState({ width })
-  }
+      w.innerWidth || documentElement.clientWidth || body.clientWidth;
+    this.setState({ width });
+  };
   renderContactSuggestion = () => {
     if (this.state.width < 951) {
-      return <ContactSuggestion />
+      return <ContactSuggestion />;
     }
-  }
+  };
   componentWillMount = () => {
-    this.updateHeight()
-  }
+    this.updateHeight();
+  };
   componentDidMount = () => {
-    window.scrollTo(0, 0)
-    window.addEventListener('resize', this.updateHeight)
-  }
+    window.scrollTo(0, 0);
+    window.addEventListener("resize", this.updateHeight);
+  };
 
   componentWillUnmount = () => {
-    window.removeEventListener('resize', this.updateHeight)
-  }
+    window.removeEventListener("resize", this.updateHeight);
+  };
 
-  render () {
+  render() {
     return (
       <>
         <Header />
         <Navbar />
         <ContentWrapper>
-          <div className='container'>
+          <div className="container">
             <Title>Bienvenue</Title>
             <Text>
               <p>
@@ -54,7 +54,11 @@ class HomePage extends React.PureComponent {
                 oeufs ou de faire un compost.
               </p>
               <Title>
-                <img src={Schema} alt='Schema Cocomposte' />
+                <img
+                  style={{ maxWidth: "100%" }}
+                  src={Schema}
+                  alt="Schema Cocomposte"
+                />
               </Title>
 
               <p>
@@ -69,7 +73,7 @@ class HomePage extends React.PureComponent {
             <TextAndImage />
             <ShowArticles />
           </div>
-          <div className='container '>
+          <div className="container ">
             <Title>Photos</Title>
             <ShowImages />
           </div>
@@ -77,7 +81,7 @@ class HomePage extends React.PureComponent {
           <Footer />
         </ContentWrapper>
       </>
-    )
+    );
   }
 }
-export default HomePage
+export default HomePage;
