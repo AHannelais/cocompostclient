@@ -1,13 +1,13 @@
-import React from 'react'
-import poulesVille from '../../../images/poulesVille.jpg'
-import poulesPleinAir from '../../../images/poulesPleinAir.jpg'
-import pouleAndComposte from '../../../images/pouleAndComposte.jpg'
-import { Title, TextAndImage, Text } from './styledComponents'
+import React from "react";
+import poulesVille from "../../../images/poulesVille.jpg";
+import poulesPleinAir from "../../../images/poulesPleinAir.jpg";
+import pouleAndComposte from "../../../images/pouleAndComposte.jpg";
+import { Title, TextAndImage, Text } from "./styledComponents";
 
 const CocomposteCestQuoi = () => {
   return (
     <>
-      <div className='container'>
+      <div className="container">
         <Title>Cocomposte C'est Quoi ? </Title>
         <TextAndImage>
           <div>
@@ -16,14 +16,14 @@ const CocomposteCestQuoi = () => {
               Cocomposte est une association qui se donne pour mission de
               réduire les déchets et promouvoir le lien social , à travers
               l'installation de poulaillers dans les jardins publics des grandes
-              villes
+              villes.
             </p>
           </div>
 
-          <img src={poulesVille} alt='des poules dans la ville' />
+          <img src={poulesVille} alt="des poules dans la ville" />
         </TextAndImage>
         <TextAndImage>
-          <img src={poulesPleinAir} alt='des poules en plein air' />
+          <img src={poulesPleinAir} alt="des poules en plein air" />
           <div>
             <h4>Environnement</h4>
             <p>
@@ -62,14 +62,14 @@ const CocomposteCestQuoi = () => {
               Intégrer davantage de nature en ville et informer les populations
               aux enjeux du développement durable, de la transition énergétique
               et de la préservation des ressources à travers un parcours  un
-              parcours pédagogique aux abords des poulaillers .
+              parcours pédagogique aux abords des poulaillers.
             </p>
           </div>
 
-          <img src={pouleAndComposte} alt='des poules en plein air' />
+          <img src={pouleAndComposte} alt="des poules en plein air" />
         </TextAndImage>
       </div>
     </>
-  )
-}
-export default CocomposteCestQuoi
+  );
+};
+export default CocomposteCestQuoi;

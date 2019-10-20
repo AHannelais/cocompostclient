@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import marie from '../../../images/marie.png'
-import justine from '../../../images/justine.jpg'
-import marlene from '../../../images/marlene.jpg'
-import { Title, TextAndImage, Text } from './styledComponents'
+import marie from "../../../images/marie.png";
+import justine from "../../../images/justine.jpg";
+import marlene from "../../../images/marlene.jpg";
+import { Title, TextAndImage, Text } from "./styledComponents";
 
 const CocomposteCestQuoi = () => {
   return (
     <>
-      <div className='container'>
+      <div className="container">
         <Title>Qui Sommes Nous? </Title>
         <Text>
           <h4>Une Belle Equipe</h4>
@@ -24,32 +24,45 @@ const CocomposteCestQuoi = () => {
             plus raisonnable dans l’utilisation des ressources naturelles.
             Sachant que la mise en œuvre de politiques territoriales de
             développement durable, nécessite de sensibiliser et communiquer avec
-            les élus, agents, partenaires ainsi que les usagers
+            les élus, agents, partenaires ainsi que les usagers.
           </p>
         </Text>
         <TextAndImage>
           <div>
             <h4>Marie</h4>
             <p>
-              Issue d’un petit village perdu en haut de la montagne, fan de
-              sports de pleine nature et bonne vivante. Préoccupée par
-              l’intégration de la nature en ville et le partage
+              Si vous croisez Marie au George & Dragon, Toulouse, elle sera
+              sûrement tout juste en train de rentrer du dernier endroit qu'elle
+              a visité, que ce soit en France ou à l'étranger. C'est sans doute
+              parce que Marie a toujours vécu dans des milieux préservés, au
+              cœur de la nature et loin du brouhaha de la ville qu'elle veut, à
+              travers Cocomposte, offrir une bouffée d'air frais aux citadins.
+              Engagée dans la défense de l'environnement et la protection des
+              animaux, il était donc naturel pour elle de se lancer, avec ses
+              camarades, dans un tel projet : qui à la fois vise à
+              réduire/valoriser les déchets ménager et est sensible à la cause
+              animale.
             </p>
           </div>
 
-          <img src={marie} alt='Marie' />
+          <img src={marie} alt="Marie" />
         </TextAndImage>
 
-        <TextAndImage col='col'>
-          <img src={justine} alt='Justine' />
+        <TextAndImage col="col">
+          <img src={justine} alt="Justine" />
           <div>
             <h4>Justine</h4>
             <p>
-              Née à la campagne, étudiante en ville. Ramasser les œufs au
-              poulailler, nourrir les poules font partie de mes souvenirs
-              d’enfance. Garantir à tous cet accès aux espaces verts et réussir
-              à intégrer des pratiques saines répandues en campagne, à la ville
-              font partie de mes convictions.
+              Si tu aperçois Justine, elle sera sûrement entrain de bavarder
+              comme toujours. Elle saura vous dire combien elle est heureuse de
+              vivre depuis maintenant 5 ans dans sa belle ville rose. Partie
+              d’un village de campagne dans les Deux-Sèvres pour rejoindre
+              Toulouse afin d’y faire ses études, elle sait aujourd’hui la
+              frontière qu’il existe entre une vie citadine et celle d’une
+              enfant à la campagne. Nostalgique de cette période, c’est à
+              travers le projet Cocomposte qu’elle tente de concilier ces deux
+              univers. <br />
+              Elle est trésorière de l’association.
             </p>
           </div>
         </TextAndImage>
@@ -57,13 +70,19 @@ const CocomposteCestQuoi = () => {
           <div>
             <h4>Marlène</h4>
             <p>
-              Etudiante toulousaine originaire de Fronton, village avec une
-              identité agricole et viticole forte, soucieuse de valoriser les
-              producteurs locaux et les circuits courts ainsi qu’intégrer
-              pleinement la nature dans notre belle ville rose.
+              Si vous croisez Marlène, elle vous parlera fièrement de sa double
+              culture franco-espagnole, de Toulouse qui est devenu son quotidien
+              depuis quelques années et auquel elle ne se lassera probablement
+              jamais! Mais elle vous racontera surtout son enfance à la
+              campagne! Elle rêve d’offrir aux toulousains, la nature qu’elle
+              adore retrouver les week-ends chez ses parents!! Pour cela,
+              Cocomposte lui semble être l’opportunité parfaite pour intégrer un
+              peu plus de nature dans cette belle ville rose. C’est pourquoi
+              elle s’implique à fond dans ce projet!! <br />
+              Elle est trésorière de l’association.
             </p>
           </div>
-          <img src={marlene} alt='Marlène' />
+          <img src={marlene} alt="Marlène" />
         </TextAndImage>
         <Title>Leur Coups de Pouce</Title>
         <TextAndImage>
@@ -96,6 +115,6 @@ const CocomposteCestQuoi = () => {
         </TextAndImage>
       </div>
     </>
-  )
-}
-export default CocomposteCestQuoi
+  );
+};
+export default CocomposteCestQuoi;

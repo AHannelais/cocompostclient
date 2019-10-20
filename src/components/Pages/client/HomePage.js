@@ -46,7 +46,8 @@ class HomePage extends React.PureComponent {
             <Title>Bienvenue</Title>
             <Text>
               <p>
-                Bonjour à toutes et à tous
+                Bonjour à toutes et à tous,
+                <br />
                 <br /> Nous avons l'immense honneur de vous présenter notre
                 projet Cocomposte, des poules et du compost dans vos quartiers
                 !! Cocomposte est un projet pour les habitants des centres ville

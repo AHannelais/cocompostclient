@@ -1,18 +1,18 @@
-import React from 'react'
-import { Title, TitleH4, TextAndImage, Text } from './styledComponents'
-import laCloche from '../../../images/lacloche.png'
-import georgeetdragon from '../../../images/george&dragon.png'
-import georgeetdragoncocomposte from '../../../images/cocompostegeorgeetdragon.jpg'
-import faculteadmin1 from '../../../images/faculteadmin1.jpg'
-import faculteadmin2 from '../../../images/faculteadmin2.jpg'
-import mairietoulouse from '../../../images/mairietoulouse.png'
-import humusetassocies from '../../../images/humus&associes.png'
-import mariesouvestre from '../../../images/mariesouvestre.png'
+import React from "react";
+import { Title, TitleH4, TextAndImage, Text } from "./styledComponents";
+import laCloche from "../../../images/lacloche.png";
+import georgeetdragon from "../../../images/george&dragon.png";
+import georgeetdragoncocomposte from "../../../images/cocompostegeorgeetdragon.jpg";
+import faculteadmin1 from "../../../images/faculteadmin1.jpg";
+import faculteadmin2 from "../../../images/faculteadmin2.jpg";
+import mairietoulouse from "../../../images/mairietoulouse.png";
+import humusetassocies from "../../../images/humus&associes.png";
+import mariesouvestre from "../../../images/mariesouvestre.png";
 
 const CocomposteCestQuoi = () => {
   return (
     <>
-      <div className='container'>
+      <div className="container">
         <Title>Nos intervenants sur le Projet </Title>
         <Text>
           <div>
@@ -26,12 +26,12 @@ const CocomposteCestQuoi = () => {
               le poulailler, prendre soin des poules et accueillir le public
               lors de la tenue de permanence. Nous les remercions pour tout
               l’intérêt que l’équipe de l’ESAT porte à notre projet, leur
-              confiance et pour leur investissement
+              confiance et pour leur investissement.
             </p>
           </div>
         </Text>
-        <TextAndImage col='col'>
-          <img src={laCloche} alt='La Cloche' />
+        <TextAndImage col="col">
+          <img src={laCloche} alt="La Cloche" />
           <div>
             <h4>L’Association la Cloche </h4>
             <p>
@@ -44,7 +44,7 @@ const CocomposteCestQuoi = () => {
                 leur aide lors de la construction et l’installation du futur
                 poulailler mais également d’intervenir lors de l’organisation
                 d’évènements. Un grand merci pour leur aide si précieuse, leur
-                volonté et leur bonne humeur !
+                volonté et leur bonne humeur!
               </p>
             </p>
           </div>
@@ -52,11 +52,11 @@ const CocomposteCestQuoi = () => {
         <Title>Nos partenaires financiers </Title>
         <TitleH4>George & Dragon</TitleH4>
         <TextAndImage>
-          <img src={georgeetdragon} alt='george et dragon' />
+          <img src={georgeetdragon} alt="george et dragon" />
 
           <img
             src={georgeetdragoncocomposte}
-            alt='cocomposte chez george et dragon'
+            alt="cocomposte chez george et dragon"
           />
         </TextAndImage>
         <TitleH4>
@@ -73,8 +73,8 @@ const CocomposteCestQuoi = () => {
           <img src={faculteadmin2} alt="faculté d'administration de toulouse" />
         </TextAndImage>
         <Title>Nos partenaires techniques </Title>
-        <TextAndImage col='col'>
-          <img src={mairietoulouse} alt='Mairie de Toulouse' />
+        <TextAndImage col="col">
+          <img src={mairietoulouse} alt="Mairie de Toulouse" />
           <div>
             <h4>Mairie de Toulouse </h4>
             <p>
@@ -94,10 +94,10 @@ const CocomposteCestQuoi = () => {
               projet.
             </p>
           </div>
-          <img src={humusetassocies} alt='Humus et Assouciés' />
+          <img src={humusetassocies} alt="Humus et Assouciés" />
         </TextAndImage>
-        <TextAndImage col='col'>
-          <img src={mariesouvestre} alt='Marie Souvestre' />
+        <TextAndImage col="col">
+          <img src={mariesouvestre} alt="Marie Souvestre" />
           <div>
             <h4>Marie Souvestre  </h4>
             <p>
@@ -110,6 +110,6 @@ const CocomposteCestQuoi = () => {
         </TextAndImage>
       </div>
     </>
-  )
-}
-export default CocomposteCestQuoi
+  );
+};
+export default CocomposteCestQuoi;
