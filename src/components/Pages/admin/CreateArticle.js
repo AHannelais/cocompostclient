@@ -11,6 +11,7 @@ class CreateArticle extends React.Component {
     title: "",
     author: "",
     image: "",
+    noEditor: false,
     renderModal: "",
     showModalImage: false,
   };
@@ -63,6 +64,10 @@ class CreateArticle extends React.Component {
     e.preventDefault();
     this.setState({ image: e.target.value });
   };
+  onChangeNoEditor = e => {
+    this.setState({ noEditor: e.target.checked });
+  };
+
   renderModalImage = () => {
     if (this.state.showModalImage) {
       return (
@@ -111,6 +116,17 @@ class CreateArticle extends React.Component {
                 value={this.state.image}
                 onChange={this.onChangeImage}
               />
+              <div className="form-check m-1">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  checked={this.state.noEditor}
+                  onChange={this.onChangeNoEditor}
+                />
+                <label className="form-check-label" htmlFor="exampleCheck1">
+                  Afficher uniquement l'image en plein écran ?
+                </label>
+              </div>
             </form>
           </div>
           <div className="col">
@@ -135,6 +151,7 @@ class CreateArticle extends React.Component {
           title={this.state.title}
           author={this.state.author}
           image={this.state.image}
+          noEditor={this.state.noEditor}
         />
       </div>
     );

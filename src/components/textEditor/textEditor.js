@@ -39,6 +39,7 @@ class textEditor extends React.Component {
           title={this.props.title}
           author={this.props.author}
           image={this.props.image}
+          noEditor={this.props.noEditor}
           _id={this.props._id}
         />
       </div>
