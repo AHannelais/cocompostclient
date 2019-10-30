@@ -1,5 +1,6 @@
 import React from "react";
 import "./textEditorStyle.css";
+
 import {
   MegadraftEditor as Editor,
   editorStateFromRaw,
@@ -8,6 +9,7 @@ import {
 import actions from "megadraft/lib/actions/default";
 import UnderlineIcon from "./UnderlineIcon";
 import Save from "./Save";
+
 class textEditor extends React.Component {
   constructor(props) {
     super(props);
