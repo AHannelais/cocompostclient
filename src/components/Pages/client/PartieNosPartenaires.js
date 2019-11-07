@@ -78,9 +78,9 @@ const CocomposteCestQuoi = () => {
           <div>
             <h4>Mairie de Toulouse </h4>
             <p>
-              La Mairie de Toulouse nous accueille dans ces jardins pour que nos
+              La Mairie de Toulouse nous accueille dans ses jardins pour que nos
               poulettes puissent bénéficier du meilleur environnement qui soit
-              en centre ville.
+              en centre-ville.
             </p>
           </div>
         </TextAndImage>

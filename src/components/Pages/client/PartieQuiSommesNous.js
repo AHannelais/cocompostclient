@@ -84,7 +84,7 @@ const CocomposteCestQuoi = () => {
           </div>
           <img src={marlene} alt="Marlène" />
         </TextAndImage>
-        <Title>Leur Coups de Pouce</Title>
+        <Title>Leurs Coups de Pouce</Title>
         <TextAndImage>
           <div>
             <h4>Laura</h4>
