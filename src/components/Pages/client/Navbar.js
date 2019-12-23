@@ -1,47 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import DropdownMenu from "./DropdownMenu";
-import cocomposteTitle from "../../../images/cocoposteTitle2.png";
-import logoMobile from "../../../images/logoMobile.png";
-import styled from "styled-components";
-import ContactSuggestions from "./ContactsSuggestions";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import DropdownMenu from './DropdownMenu'
+import cocomposteTitle from '../../../images/cocoposteTitle2.png'
+import logoMobile from '../../../images/logoMobile.png'
+import styled from 'styled-components'
+import ContactSuggestions from './ContactsSuggestions'
 const Navbar = () => {
   return (
     <Nav>
       <DropdownMenu />
-      <Title1>
-        <Link
-          to="/"
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={cocomposteTitle} alt="COCOMPOSTE" />
-        </Link>
-      </Title1>
-      <Title2>
-        <Link
-          to="/"
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logoMobile} alt="COCOMPOSTE" />
-        </Link>
-      </Title2>
+
       <Wrapper>
         <ContactSuggestions />
       </Wrapper>
     </Nav>
-  );
-};
+  )
+}
 
 // Style
 const Nav = styled.nav`
   z-index: 1100;
   position: sticky;
   top: 0;
-  font-family: Amatic, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Amatic, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   height: calc(3vw + 71.5px);
   @media screen and (max-width: 950px) and (min-width: 680px) {
     height: calc(9.26vw + 12px);
@@ -51,7 +32,7 @@ const Nav = styled.nav`
   }
   background-color: #99c413;
   display: flex;
-`;
+`
 const Title1 = styled.div`
   width: calc(15vw + 358px);
   @media screen and (max-width: 950px) and (min-width: 680px) {
@@ -73,7 +54,7 @@ const Title1 = styled.div`
       }
     }
   }
-`;
+`
 const Title2 = styled.div`
   display: none;
   @media screen and (max-width: 680px) {
@@ -96,7 +77,7 @@ const Title2 = styled.div`
       }
     }
   }
-`;
+`
 const Wrapper = styled.div`
   position: absolute;
   right: 10px;
@@ -105,6 +86,6 @@ const Wrapper = styled.div`
   @media screen and (max-width: 950px) {
     display: none;
   }
-`;
+`
 
-export default Navbar;
+export default Navbar
